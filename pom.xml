@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<!-- Start esto solo cambia si migramos version de springbbok-->
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.0.5</version>
+		<relativePath />
+		<!-- Fin esto solo cambia si migramos version de springbbok-->
+	</parent>
+	<groupId>es.com.movertis.backend</groupId>
+	<artifactId>movertis-backend</artifactId>
+	<version>1.0</version>
+	<name>movertis-backend</name>
+	<packaging>pom</packaging>
+	<description>Proyecto backend java</description>
+	<modules>
+		<module>movertis-backend-lib</module>
+		<module>movertis-backend-core</module>
+		<module>movertis-backend-service</module>
+		<module>movertis-backend-web</module>
+	</modules>
+	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.26</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>6.0.7</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.20.0</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+</project>
